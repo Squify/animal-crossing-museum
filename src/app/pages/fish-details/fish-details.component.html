@@ -1,0 +1,16 @@
+<div *ngIf="fish">
+  <div class="main">
+    <h1>{{ fish.name | titlecase }}</h1><span>{{ 'LOCATION.FISH.' + fish.location | translate }}</span>
+    <img src="{{ fish.image }}">
+  </div>
+  <div>
+    <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ fish.price | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+    <p><b>{{ 'INTERFACE_FIELDS.rarity' | translate }} :</b> {{ 'RARITY.' + fish.rarity | translate }}</p>
+    <p>
+      <b>{{ 'INTERFACE_FIELDS.presence' | translate }} : </b>
+      <label *ngFor="let month of fish.months; let isLast=last">
+        {{ 'MONTH.' + month | translate }}{{ isLast ? '' : ',\t&nbsp;' }}
+      </label>
+    </p>
+  </div>
+</div>

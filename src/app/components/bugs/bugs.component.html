@@ -1,0 +1,20 @@
+<mat-card [class.isPresent]="!bugs.isPresentToday" [class.isntPresent]="bugs.isPresentToday" (click)="open(bugs.id)">
+  <mat-card-header>
+    <div mat-card-avatar><img src="{{ bugs.icon }}"></div>
+    <mat-card-title>{{ bugs.name | titlecase }}</mat-card-title>
+    <mat-card-subtitle>{{ 'LOCATION.BUGS.' + bugs.location | translate }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <!--      <span class="material-icons">{{ !bugs.isPresentToday ? 'location_on' : 'location_off' }}</span><br>-->
+      <p *ngIf="bugs.isPresentToday" class="flex-row">
+        <span class="material-icons">location_off</span> {{ 'INTERFACE_FIELDS.unavailable' | translate }}
+      </p>
+      <p *ngIf="!bugs.isPresentToday" class="flex-row">
+        <span class="material-icons">location_on</span> {{ 'INTERFACE_FIELDS.available' | translate }}
+      </p>
+      <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ bugs.price | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+      <p><b>{{ 'INTERFACE_FIELDS.rarity' | translate }} :</b> {{ 'RARITY.' + bugs.rarity | translate }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>

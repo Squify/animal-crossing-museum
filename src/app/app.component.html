@@ -1,0 +1,28 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <div [routerLink]="''">
+    <img width="40" alt="Angular Logo" src="assets/images/leaf_logo.png"/>
+    <span>Animal Crossing - Museum</span>
+  </div>
+  <div class="spacer"></div>
+  <button mat-flat-button color="basic" [routerLink]="'bugs'">
+    <img width="25" style="margin: unset; margin-right: 8px" src="assets/images/insectes.png"/>
+    Insectes
+  </button>
+  <button mat-flat-button color="basic" [routerLink]="'fish'">
+    <img width="25" style="margin: unset; margin-right: 8px" src="assets/images/poissons.png"/>
+    Poissons
+  </button>
+  <button mat-flat-button color="basic" [routerLink]="'art'">
+    <img width="25" style="margin: unset; margin-right: 8px" src="assets/images/rounard.png"/>
+    Oeuvres
+  </button>
+  <button mat-flat-button color="basic" [routerLink]="'fossil'">
+    <img width="25" style="margin: unset; margin-right: 8px" src="assets/images/fossil.png"/>
+    Fossiles
+  </button>
+</div>
+
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>

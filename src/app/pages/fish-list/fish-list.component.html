@@ -1,0 +1,25 @@
+<div *ngIf="(locationList.length > 0) && (fishList.length > 0)">
+  <h1>{{ fishList.length }} {{ 'OTHER.fishToGet' | translate }}</h1>
+  <ngb-alert type="custom" [dismissible]="false">
+    <strong>{{ 'OTHER.informations' | translate }} !</strong>
+    <hr>
+    {{ 'OTHER.fishAlert1' | translate : { length: fishList.length } }}<br>
+    {{ 'OTHER.fishAlert2' | translate }}
+  </ngb-alert>
+  <div *ngFor="let location of locationList">
+    <h2>{{ 'LOCATION.FISH.' + location | translate }}</h2>
+    <div class="row">
+      <div class="col" *ngFor="let fish of (fishList | location:location)">
+        <app-fish [fish]="fish"></app-fish>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="fishWithUndefinedLocation.length > 0">
+    <h2>{{ 'LOCATION.BUGS.' | translate }}</h2>
+    <div class="row">
+      <div class="col" *ngFor="let bugs of fishWithUndefinedLocation">
+        <app-bugs [bugs]="bugs"></app-bugs>
+      </div>
+    </div>
+  </div>
+</div>
