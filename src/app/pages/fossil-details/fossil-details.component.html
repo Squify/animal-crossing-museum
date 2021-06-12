@@ -1,0 +1,9 @@
+<div *ngIf="fossil">
+  <div class="main">
+    <h1>{{ fossil.name | titlecase }}</h1>
+    <img src="{{ fossil.image }}">
+  </div>
+  <div>
+    <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ fossil.price | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+  </div>
+</div>

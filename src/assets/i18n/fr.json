@@ -1,0 +1,86 @@
+{
+  "DASHBOARD": {
+    "firstP": "Ce site est à destination des joueurs du dernier opus d'Animal Crossing : New Horizons. Vous retrouverez ici la liste des insectes et poissons à capturer en jeu, ainsi que les oeuvres et fossiles qui vous seront nécessaire pour remplir le musée de Thibou !",
+    "secondP": "Pour vous rendre sur les différentes pages vous pouvez cliquer sur les boutons en haut de la page ou sur les images ci-dessous",
+    "source": "Les ressources utilisées proviennent de l'API <a href=\"http://acnhapi.com/\">ACNH API</a> libre d'utilisation",
+    "welcome": "Bienvenue sur <b>Animal Crossing - Museum</b>"
+  },
+  "INTERFACE_FIELDS": {
+    "available": "Actuellement disponible",
+    "bells": "clochettes",
+    "buyPrice": "Prix d'achat",
+    "hasFake": "Reproductions",
+    "presence": "Presence month",
+    "rarity": "Rareté",
+    "sellPrice": "Prix de revente",
+    "unavailable": "Actuellement indisponible"
+  },
+  "LOCATION": {
+    "BUGS": {
+      "": "Non défini",
+      "Flying": "En train de voler",
+      "Flying by light": "En train de voler près des lumières",
+      "Flying near hybrid flowers": "En train de voler près des fleurs hybrides",
+      "Hitting rocks": "En frappant des rochers",
+      "Near trash": "Près des déchets",
+      "On beach rocks": "Sur les rochers de la plage",
+      "On flowers": "Sur les fleurs",
+      "On palm trees": "Sur les cocotiers",
+      "On ponds and rivers": "Sur les étangs et rivières",
+      "On rocks (when raining)": "Sur les rochers (quand il pleut)",
+      "On rotten food": "Sur la nourriture pourrie",
+      "On the beach": "Sur la plage",
+      "On the ground": "Sur le sol",
+      "On tree stumps": "Sur les souches d'arbres",
+      "On trees": "Sur les arbres",
+      "On villagers": "Sur les villageois",
+      "On white flowers": "Sur les fleurs blanches",
+      "Shaking trees": "En secouant des arbres",
+      "Under trees": "Sous les arbres",
+      "Underground": "Sous terre"
+    },
+    "FISH": {
+      "Pier": "Ponton",
+      "Pond": "Étang",
+      "River": "Rivière",
+      "River (Clifftop)": "Rivière (falaises)",
+      "River (Clifftop) & Pond": "Rivière (falaises) & Étang",
+      "River (Mouth)": "Estuaire",
+      "Sea": "Mer",
+      "Sea (when raining or snowing)": "Mer (quand il pleut ou qu'il neige)"
+    }
+  },
+  "MONTH": {
+    "1": "Janvier",
+    "2": "Février",
+    "3": "Mars",
+    "4": "Avril",
+    "5": "Mai",
+    "6": "Juin",
+    "7": "Juillet",
+    "8": "Août",
+    "9": "Septembre",
+    "10": "Octobre",
+    "11": "Novembre",
+    "12": "Décembre"
+  },
+  "OTHER": {
+    "artAlert": "Vous pouvez trouver ici la liste des {{length}} oeuvres à récupérer dans Animal Crossing : New Horizons. Pour voir plus d'informations sur un élément, il vous suffit de cliquer dessus.",
+    "artToGet": "oeuvres à récupérer",
+    "bugsAlert1": "Vous pouvez trouver ici la liste des {{ length }} insectes à capturer dans Animal Crossing : New Horizons.",
+    "bugsAlert2": "Les insectes disponibles actuellement sont affichés avec un cadre vert pour vous aider à les voir plus rapidement. Ils sont également trié par ordre de prix décroissant. Pour voir plus d'informations sur un élément, il vous suffit de cliquer dessus.",
+    "bugsToGet": "insectes à capturer",
+    "fishAlert1": "Vous pouvez trouver ici la liste des {{ length }} poissons à capturer dans Animal Crossing : New Horizons.",
+    "fishAlert2": "Les poissons disponibles actuellement sont affichés avec un cadre vert pour vous aider à les voir plus rapidement. Ils sont également trié par ordre de prix décroissant. Pour voir plus d'informations sur un élément, il vous suffit de cliquer dessus.",
+    "fishToGet": "poissons à capturer",
+    "fossilAlert": "Vous pouvez trouver ici la liste des {{length}} fossiles à récupérer dans Animal Crossing : New Horizons. Pour voir plus d'informations sur un élément, il vous suffit de cliquer dessus.",
+    "fossilsToGet": "fossiles à récupérer",
+    "informations": "Informations"
+  },
+  "RARITY": {
+    "Common": "Commun",
+    "Rare": "Rare",
+    "Ultra-rare": "Très rare",
+    "Uncommon": "Peu commun"
+  }
+}

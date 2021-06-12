@@ -1,0 +1,16 @@
+<div *ngIf="bugs">
+  <div class="main">
+    <h1>{{ bugs.name | titlecase }}</h1><span>{{ 'LOCATION.BUGS.' + bugs.location | translate }}</span>
+    <img src="{{ bugs.image }}">
+  </div>
+  <div>
+    <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ bugs.price | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+    <p><b>{{ 'INTERFACE_FIELDS.rarity' | translate }} :</b> {{ 'RARITY.' + bugs.rarity | translate }}</p>
+    <p>
+      <b>{{ 'INTERFACE_FIELDS.presence' | translate }} : </b>
+      <label *ngFor="let month of bugs.months; let isLast=last">
+        {{ 'MONTH.' + month | translate }}{{ isLast ? '' : ',\t&nbsp;' }}
+      </label>
+    </p>
+  </div>
+</div>

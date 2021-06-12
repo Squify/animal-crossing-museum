@@ -1,0 +1,15 @@
+<div *ngIf="fossilList.length > 0">
+  <h1>{{ fossilList.length }} {{ 'OTHER.fossilsToGet' | translate }}</h1>
+  <ngb-alert type="custom" [dismissible]="false">
+    <strong>{{ 'OTHER.informations' | translate }} !</strong>
+    <hr>
+    {{ 'OTHER.fossilAlert' | translate : { length: fossilList.length } }}
+  </ngb-alert>
+  <div>
+    <div class="row">
+      <div class="col" *ngFor="let fossil of fossilList">
+        <app-fossil [fossil]="fossil"></app-fossil>
+      </div>
+    </div>
+  </div>
+</div>

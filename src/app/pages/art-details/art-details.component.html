@@ -1,0 +1,11 @@
+<div *ngIf="art">
+  <div class="main">
+    <h1>{{ art.name | titlecase }}</h1>
+    <img src="{{ art.image }}">
+  </div>
+  <div>
+    <p><b>{{ 'INTERFACE_FIELDS.buyPrice' | translate }} :</b> {{ art.price | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+    <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ art.sellPrice | number }} {{ 'INTERFACE_FIELDS.bells' | translate }}</p>
+    <p><b>{{ 'INTERFACE_FIELDS.hasFake' | translate }} :</b> {{ !art.hasFake ? 'Non' : 'Oui' }}</p>
+  </div>
+</div>

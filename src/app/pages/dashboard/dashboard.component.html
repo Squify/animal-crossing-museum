@@ -1,0 +1,16 @@
+<div class="flex-column">
+  <h1 ></h1>
+  <p>{{ 'DASHBOARD.firstP' | translate }}</p>
+  <p>{{ 'DASHBOARD.secondP' | translate }} :</p>
+
+  <div class="flex-row">
+    <img class="logo" src="assets/images/insectes.png" [routerLink]="'bugs'"/>
+    <img class="logo" src="assets/images/poissons.png" [routerLink]="'fish'"/>
+    <img class="logo" src="assets/images/rounard.png" [routerLink]="''"/>
+    <img class="logo" src="assets/images/fossil.png" [routerLink]="''"/>
+  </div>
+
+  <p style="margin-top: 10%" [innerHTML]="'DASHBOARD.source' | translate"></p>
+
+  <img class="footer" src="assets/images/acnh_nook.png"/>
+</div>

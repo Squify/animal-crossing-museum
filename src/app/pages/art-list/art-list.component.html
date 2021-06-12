@@ -1,0 +1,15 @@
+<div *ngIf="artList.length > 0">
+  <h1>{{ artList.length }} {{ 'OTHER.artToGet' | translate }}</h1>
+  <ngb-alert type="custom" [dismissible]="false">
+    <strong>{{ 'OTHER.informations' | translate }} !</strong>
+    <hr>
+    {{ 'OTHER.artAlert' | translate : { length: artList.length } }}
+  </ngb-alert>
+  <div>
+    <div class="row">
+      <div class="col" *ngFor="let art of artList">
+        <app-art [art]="art"></app-art>
+      </div>
+    </div>
+  </div>
+</div>

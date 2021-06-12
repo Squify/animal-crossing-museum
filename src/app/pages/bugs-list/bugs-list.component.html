@@ -1,0 +1,25 @@
+<div *ngIf="(locationList.length > 0) && (bugsList.length > 0)">
+  <h1>{{ bugsList.length }} {{ 'OTHER.bugsToGet' | translate }}</h1>
+  <ngb-alert type="custom" [dismissible]="false">
+    <strong>{{ 'OTHER.informations' | translate }} !</strong>
+    <hr>
+    {{ 'OTHER.bugsAlert1' | translate : { length: bugsList.length } }}<br>
+    {{ 'OTHER.bugsAlert2' | translate }}
+  </ngb-alert>
+  <div *ngFor="let location of locationList">
+    <h2>{{ 'LOCATION.BUGS.' + location | translate }}</h2>
+    <div class="row">
+      <div class="col" *ngFor="let bugs of (bugsList | location:location)">
+        <app-bugs [bugs]="bugs"></app-bugs>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="bugsWithUndefinedLocation.length > 0">
+    <h2>{{ 'LOCATION.BUGS.' | translate }}</h2>
+    <div class="row">
+      <div class="col" *ngFor="let bugs of bugsWithUndefinedLocation">
+        <app-bugs [bugs]="bugs"></app-bugs>
+      </div>
+    </div>
+  </div>
+</div>

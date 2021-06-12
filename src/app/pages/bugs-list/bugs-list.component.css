@@ -1,0 +1,43 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+h2 {
+  margin: unset;
+  margin-top: 16px;
+}
+
+:host >>> .alert-custom {
+   color: #706754;
+   background-color: rgba(112, 103, 84, 0.10);
+   border-color: #706754;
+ }
+
+.col {
+  min-width: 25%;
+  min-height: 100%;
+  padding: unset;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1300px) {
+  .col {
+    min-width: 30.5%;
+    min-height: 100%;
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .col {
+    min-width: 50%;
+    min-height: 100%;
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .col {
+    min-width: 100%;
+    min-height: 100%;
+    padding: unset;
+  }
+}

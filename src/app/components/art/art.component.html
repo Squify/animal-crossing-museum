@@ -1,0 +1,13 @@
+<mat-card (click)="open(art.id)">
+  <mat-card-header>
+    <div mat-card-avatar><img src="{{ art.image }}"></div>
+    <mat-card-title>{{ art.name | titlecase }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <p><b>{{ 'INTERFACE_FIELDS.buyPrice' | translate }} :</b> {{ art.price | number }} clochettes</p>
+      <p><b>{{ 'INTERFACE_FIELDS.sellPrice' | translate }} :</b> {{ art.sellPrice | number }} clochettes</p>
+      <p><b>{{ 'INTERFACE_FIELDS.hasFake' | translate }} :</b> {{ !art.hasFake ? 'Non' : 'Oui' }}</p>
+    </div>
+  </mat-card-content>
+</mat-card>
